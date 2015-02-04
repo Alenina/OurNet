@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG - Blur.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Uwf-iJ-fxR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsk-hK-8OL">
+                                <rect key="frame" x="38" y="56" width="525" height="303"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Uwf-iJ-fxR" secondAttribute="trailing" id="Bzh-KK-ja0"/>
+                            <constraint firstItem="Uwf-iJ-fxR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Czf-xy-SA5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uwf-iJ-fxR" secondAttribute="bottom" id="I1W-Md-POO"/>
+                            <constraint firstAttribute="trailing" secondItem="fsk-hK-8OL" secondAttribute="trailing" constant="37" id="KDb-lp-pb5"/>
+                            <constraint firstItem="Uwf-iJ-fxR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KVS-V5-fnz"/>
+                            <constraint firstItem="fsk-hK-8OL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="M0c-DY-khG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fsk-hK-8OL" secondAttribute="bottom" constant="241" id="MXN-Ye-Cbz"/>
+                            <constraint firstItem="fsk-hK-8OL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38" id="qc8-Tq-x4L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewMapBack" destination="fsk-hK-8OL" id="tN3-WM-pcf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG - Blur.jpg" width="2048" height="1536"/>
+    </resources>
+</document>
