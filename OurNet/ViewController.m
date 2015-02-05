@@ -52,7 +52,7 @@
     [arrayButtonsForPin addObject:[self createPinWithPosition:CGPointMake(0.8, 0.48) withTag:5]];
    
     
-    scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10 * MULTIPLY_VALUE, SCREEN_WIDTH - HEIGHT_SCROLL - 5 * MULTIPLY_VALUE, SCREEN_HEIGHT - 20 * MULTIPLY_VALUE, HEIGHT_SCROLL)];
+    scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10 * MULTIPLY_VALUE, self.view.frame.size.height - HEIGHT_SCROLL - 5 * MULTIPLY_VALUE, self.view.frame.size.width - 20 * MULTIPLY_VALUE, HEIGHT_SCROLL)];
     scrollView.backgroundColor = [UIColor clearColor];
     scrollView.scrollEnabled = YES;
     [scrollView setShowsHorizontalScrollIndicator:YES];
