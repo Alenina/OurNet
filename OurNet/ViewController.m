@@ -59,7 +59,7 @@
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.height * 6, scrollView.frame.size.height);
     [self.view addSubview:scrollView];
 
-    for (NSInteger i = 0; i < 6; i ++) {
+    for (NSInteger i = 0; i < 6; i ++) { 
         
         DataModelForPins * newDataForPins = [[DataModelForPins alloc] init];
         newDataForPins.title = @"UK Headquarters";
